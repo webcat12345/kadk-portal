@@ -1,3 +1,15 @@
-<p>
-  send-idea-page works!
-</p>
+<div class="send-idea-page">
+  <form [formGroup]="form" (ngSubmit)="send()">
+    <div class="form-group">
+      <label for="topic">Topic of idea</label>
+      <input id="topic" class="form-control" placeholder="Topic of idea" formControlName="topic">
+    </div>
+
+    <div class="form-group">
+      <label for="idea">Topic of idea</label>
+      <textarea id="idea" class="form-control" placeholder="Write idea here..." formControlName="idea"></textarea>
+    </div>
+
+    <button class="btn btn-primary">Send</button>
+  </form>
+</div>
