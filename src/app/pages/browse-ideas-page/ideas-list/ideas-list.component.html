@@ -1,0 +1,20 @@
+<div>
+  <div class="p-0 pt-3 pb-3 d-flex justify-content-between align-items-center">
+    <h3>Ideas proposed by other users</h3>
+    <div class="form-group mb-0">
+      <input class="form-control mb-0" placeholder="Search">
+    </div>
+  </div>
+  <ngx-datatable
+    class="material"
+    [rows]="rows"
+    [loadingIndicator]="loadingIndicator"
+    [columns]="columns"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="'auto'"
+    [selectionType]="'single'"
+    [reorderable]="reorderable" (select)="onSelect($event)">
+  </ngx-datatable>
+</div>
